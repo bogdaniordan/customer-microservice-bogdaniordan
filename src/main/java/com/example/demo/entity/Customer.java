@@ -27,10 +27,16 @@ public class Customer {
 
     private String occupation;
 
-    public Customer(String firstName, String lastName, int age, String occupation) {
+    private String username;
+
+    private String password;
+
+    public Customer(String firstName, String lastName, int age, String occupation, String username, String password) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.age = age;
         this.occupation = occupation;
+        this.username = username;
+        this.password = password;
     }
 }

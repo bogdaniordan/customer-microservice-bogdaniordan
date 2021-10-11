@@ -20,4 +20,8 @@ public class CustomerService {
     public List<Customer> getAllCustomers() {
         return customerRepository.findAll();
     }
+
+    public Customer findById(Long id) {
+        return customerRepository.findById(id).orElseThrow(() -> new IllegalArgumentException(""));
+    }
 }
